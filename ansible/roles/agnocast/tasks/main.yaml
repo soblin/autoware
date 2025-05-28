@@ -43,7 +43,7 @@
 
 - name: Update apt cache
   ansible.builtin.apt:
-    update_cache: true
+    update_cache: false
   become: true
 
 - name: Install {{ agnocast_heaphook_package }}
